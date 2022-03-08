@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="58ba708b-c4ca-48cc-8c55-2182ca9c6d58" name="develop" url="">
+        <fileTransfer rootFolder="/var/go_project/im" accessType="SFTP" host="10.250.160.32" port="22" sshConfigId="9753c4c1-6de2-4a67-be3f-97fd1e374a48" sshConfig="root@10.250.160.32:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
