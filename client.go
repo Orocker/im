@@ -108,15 +108,14 @@ func (c *Client) DealResponse() {
 		return
 	}
 
-	// 等价于
-	for {
-		buf := make([]byte, 4096)
-		read, err := c.conn.Read(buf)
-		if err != nil {
-			return
-		}
-		fmt.Println(read)
-	}
+	//for {
+	//	buf := make([]byte, 4096)
+	//	read, err := c.conn.Read(buf)
+	//	if err != nil {
+	//		return
+	//	}
+	//	fmt.Println(read)
+	//}
 }
 
 func (c *Client) menu() bool {
