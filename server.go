@@ -73,10 +73,8 @@ func (serv *Server) Handle(conn net.Conn) {
 				fmt.Println("Conn read error", err)
 				return
 			}
-
 			// 提取用户消息 去除(\n)
 			msg := string(buf[:n-1])
-
 			user.DoMessage(msg)
 
 			isActive <- true
@@ -89,7 +87,7 @@ func (serv *Server) Handle(conn net.Conn) {
 		// 当前用户是活跃的，重置定时器
 		// 不做任何事情，为了激活select 更新下面的定时器
 		case <-time.After(10 * time.Hour):
-			user.SendMsg("你超时被踢了")
+			user.SendMsg("Time out")
 
 			close(user.C)
 

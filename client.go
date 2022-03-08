@@ -93,13 +93,10 @@ func (c *Client) Run() {
 		switch c.mode {
 		case 1:
 			c.PublicChat()
-			break
 		case 2:
 			c.PrivateChat()
-			break
 		case 3:
 			c.UpdateName()
-			break
 		}
 	}
 }
